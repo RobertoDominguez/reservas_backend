@@ -1,0 +1,35 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Store extends Model
+{
+    use HasFactory,SoftDeletes;
+
+    protected $fillable=[
+        'name',
+        'url_map',
+        'days',
+        'location',
+        'ico',
+        'logo',
+        'mision',
+        'vision',
+        'phone',
+        'facebook',
+        'twitter',
+        'tik_tok',
+        'youtube',
+        'whatsapp',
+        'qr',
+        'is_open',
+        'days_subscription',
+
+    ];
+
+
+}
